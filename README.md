@@ -6,33 +6,33 @@ A lightweight Convolutional Autoencoder built to perform unsupervised image deno
 
 This project walks through:
 
-Loading and visualizing STL-10 images (100k unlabeled + 8k test).
+* Loading and visualizing STL-10 images (100k unlabeled + 8k test).
 
-Adding Gaussian noise to simulate corrupted inputs.
+* Adding Gaussian noise to simulate corrupted inputs.
 
-Building a compact Conv Autoencoder for denoising.
+* Building a compact Conv Autoencoder for denoising.
 
-Training with L1 Loss and evaluating using PSNR.
+* Training with L1 Loss and evaluating using PSNR.
 
-Visualizing Original → Noisy → Denoised results.
+* Visualizing Original → Noisy → Denoised results.
 
 🧠 Model Architecture
 
 The model consists of:
 
-Encoder: Convolution + downsampling to learn compressed representations.
+* Encoder: Convolution + downsampling to learn compressed representations.
 
-Decoder: Transposed convolutions to reconstruct clean images.
+* Decoder: Transposed convolutions to reconstruct clean images.
 
-Objective: Minimize L1 loss between clean and reconstructed images.
+* Objective: Minimize L1 loss between clean and reconstructed images.
 
 📊 Training Metrics
 
-Loss: L1 loss for sharp, natural reconstructions
+* Loss: L1 loss for sharp, natural reconstructions
 
-PSNR: Quantitative measure of reconstruction quality
+* PSNR: Quantitative measure of reconstruction quality
 
-Visualizations: Side-by-side comparisons of model performance
+* Visualizations: Side-by-side comparisons of model performance
 
 🗂 Dataset
 
@@ -45,50 +45,32 @@ Loaded via torchvision.datasets.STL10.
 
 🛠 Technologies Used
 
-Python
-
-PyTorch / Torchvision
-
-NumPy
-
-Matplotlib
-
-Jupyter Notebook
+* Python
+* PyTorch / Torchvision
+* NumPy
+* Matplotlib
+* Jupyter Notebook
 
 ▶️ How to Run
 
 Install dependencies:
 
-pip install torch torchvision numpy matplotlib
-
-
+* pip install torch torchvision numpy matplotlib
 Open the notebook:
-
 jupyter notebook cnn-based-denoising-auto-encoder.ipynb
-
-
 Run all cells to:
-
-Load dataset
-
-Generate noisy images
-
-Train autoencoder
+* Load dataset
+* Generate noisy images
+* Train autoencoder
 
 View denoising results
-
 📌 Results
-
 The notebook includes:
-
-Training curves
-
-PSNR improvements
-
-Visual comparison:
+* Training curves
+* PSNR improvements
+* Visual comparison:
 Original → Noisy → Denoised
 
 📄 Notebook
-
-The full implementation is available in:
+* The full implementation is available in:
 cnn-based-denoising-auto-encoder.ipynb
